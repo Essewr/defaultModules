@@ -17,7 +17,7 @@ const downloadPage = require("./src/downloadPage");
 
 const WikiLoader = require("./src/WikiLoader");
 
-const loader = new WikiLoader("India_pale_ale");
+const loader = new WikiLoader("India_pale_ale"); 
 const wikiUrl = loader.getUrl();
 
 // console.log(wikiUrl);
@@ -33,15 +33,3 @@ downloadPage(wikiUrl.href, page => {
 process.on("beforeExit", code => {
   console.log("Bye Bye");
 });
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
